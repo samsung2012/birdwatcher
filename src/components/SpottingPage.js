@@ -1,42 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { getBirds } from "../api/birdApi";
+import BirdList from "./BirdsList";
 
-class SpottingPage extends React.Component {
-  state = {
-    birds: [],
-  };
+function SpottingPage() {
+  const [birds, setBirds] = useState([]);
 
-  componentDidMount() {
-    getBirds().then((birds) => this.setState({ birds: birds }));
-  }
+  useEffect(() => {
+    getBirds().then((_birds) => setBirds(_birds));
+  }, []);
 
-  render() {
-    return (
-      <>
-        <h2>Spotting Page</h2>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Location ID</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.birds.map((bird) => {
-              return (
-                <tr key={bird.id}>
-                  <td>{bird.type}</td>
-                  <td>{bird.locationId}</td>
-                  <td>{bird.time}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </>
-    );
-  }
+  return (
+    <>
+      <h2>Spotting Page</h2>
+      <BirdList birds={birds} />
+    </>
+  );
 }
 
 export default SpottingPage;
