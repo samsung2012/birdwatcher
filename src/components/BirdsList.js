@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function BirdList(props) {
   return (
@@ -15,7 +16,9 @@ function BirdList(props) {
         {props.birds.map((bird) => {
           return (
             <tr key={bird.id}>
-              <td>{bird.type}</td>
+              <td>
+                <Link to={"/bird/" + bird.slug}>{bird.type}</Link>
+              </td>
               <td>{bird.locationId}</td>
               <td>{bird.time}</td>
             </tr>
