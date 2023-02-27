@@ -1,1 +1,61 @@
-{"birds":[{"id":1,"type":"Blue Jay","slug":"blue-jay","locationId":1,"time":"11:00 AM"},{"id":2,"type":"Mocking Bird","slug":"mocking-bird","locationId":1,"time":"10:00 AM"},{"id":3,"type":"Starling","slug":"starling","locationId":2,"time":"1:00 PM"},{"id":4,"type":"Sparrow","slug":"sparrow","locationId":2,"time":"11:00 AM"},{"id":5,"type":"Eagle","slug":"eagle","locationId":3,"time":"9:00 AM"}],"locations":[{"id":1,"name":"USA"},{"id":2,"name":"Canada"},{"id":3,"name":"Mexico"}]}
+{
+  "birds": [
+    {
+      "id": 1,
+      "type": "Blue Jaysdfs",
+      "slug": "blue-jay",
+      "locationId": 1,
+      "time": "11:00 AM"
+    },
+    {
+      "id": 2,
+      "type": "Mocking Bird",
+      "slug": "mocking-bird",
+      "locationId": 1,
+      "time": "10:00 AM"
+    },
+    {
+      "id": 3,
+      "type": "Starling",
+      "slug": "starling",
+      "locationId": 2,
+      "time": "1:00 PM"
+    },
+    {
+      "id": 4,
+      "type": "Sparrow",
+      "slug": "sparrow",
+      "locationId": 2,
+      "time": "11:00 AM"
+    },
+    {
+      "id": 5,
+      "type": "Eagle",
+      "slug": "eagle",
+      "locationId": 3,
+      "time": "9:00 AM"
+    },
+    {
+      "id": 6,
+      "slug": "blue",
+      "type": "Blue ",
+      "locationId": 3,
+      "time": "asd",
+      "createdAt": 1677468703093
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "USA"
+    },
+    {
+      "id": 2,
+      "name": "Canada"
+    },
+    {
+      "id": 3,
+      "name": "Mexico"
+    }
+  ]
+}
