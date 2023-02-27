@@ -2,14 +2,14 @@
   "birds": [
     {
       "id": 1,
-      "type": "Blue Jaysdfs",
+      "type": "Blue Jay",
       "slug": "blue-jay",
       "locationId": 1,
       "time": "11:00 AM"
     },
     {
       "id": 2,
-      "type": "Mocking Bird",
+      "type": "Mocking Bird 5",
       "slug": "mocking-bird",
       "locationId": 1,
       "time": "10:00 AM"
@@ -37,11 +37,11 @@
     },
     {
       "id": 6,
-      "slug": "blue",
-      "type": "Blue ",
-      "locationId": 3,
-      "time": "asd",
-      "createdAt": 1677468703093
+      "slug": "sdf",
+      "type": "sdf",
+      "locationId": 2,
+      "time": "sdf",
+      "createdAt": 1677516733401
     }
   ],
   "locations": [
