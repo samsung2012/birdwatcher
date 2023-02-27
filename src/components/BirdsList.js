@@ -7,6 +7,7 @@ function BirdList(props) {
     <table className="table">
       <thead>
         <tr>
+          <th>&nbsp;</th>
           <th>Type</th>
           <th>Location ID</th>
           <th>Time</th>
@@ -16,6 +17,14 @@ function BirdList(props) {
         {props.birds.map((bird) => {
           return (
             <tr key={bird.id}>
+              <td>
+                <button
+                  className="btn btn-outline-danger"
+                  onClick={() => props.deleteBird(bird.id)}
+                >
+                  Delete
+                </button>
+              </td>
               <td>
                 <Link to={"/bird/" + bird.slug}>{bird.type}</Link>
               </td>
@@ -30,6 +39,7 @@ function BirdList(props) {
 }
 
 BirdList.propTypes = {
+  deleteBird: PropTypes.func.isRequired,
   birds: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
